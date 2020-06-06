@@ -1,2 +1,3 @@
 This is new file in Master
-Added new line in abc file 
+Added new line in abc file
+Test for merge
