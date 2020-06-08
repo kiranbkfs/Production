@@ -25,4 +25,4 @@ fi
 echo "REL-30226 : merging changesets from maintenance-promotion and updating versions" >> commit.txt
 git commit -F commit.txt
 commit=`git log $start_rev..HEAD | egrep "^ *CAL" | grep -v "Merge branch " | grep -v "Merge remote-tracking branch" | grep -v "Rebase and Deliver" | sort -u`
-echo `git push
+echo `git push`
