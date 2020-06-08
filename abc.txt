@@ -1,3 +1,10 @@
 This is new file in Master
+<<<<<<< HEAD
 Added new line in abc file 
 check for conflict 
+=======
+Added new line in abc file
+Test for merge
+check for conflict
+Check for credintials
+>>>>>>> 0ed61ef8f6de2120ea6aa4f7a27871608e46ea3b
