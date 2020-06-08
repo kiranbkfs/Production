@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
 git checkout maintenance
-merge_rev=`git log -1 | grep commit`
-echo "merge_rev"
+revision=`git log -1 | grep commit`
+mergeRev=`echo $revision | cut -d " " -f 2`
 git pull
 git checkout promotion-1610
 git pull
