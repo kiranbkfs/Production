@@ -2,6 +2,7 @@
 
 git checkout maintenance
 merge_rev=`git log -1 | grep commit`
+echo "merge_rev"
 git pull
 git checkout promotion-1610
 git pull
