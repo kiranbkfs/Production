@@ -1,13 +1,15 @@
 #!/usr/bin/env bash
 
 git checkout maintenance
+merge_rev=`git log -1 | grep commit`
 git pull
 git checkout promotion-1610
 git pull
-git merge remotes/origin/maintenance
+
 revision=`git log -1 | grep commit`
 start_rev=`echo $revision | cut -d " " -f 2`
 echo "Revision before merging : $start_rev"
+
 #merge and ensure no conflict
 check2=$(git merge $mergeRev --no-commit 2>&1)
 if [[ $check2 == *"conflict"* ]]; then
